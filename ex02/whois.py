@@ -1,5 +1,6 @@
 import sys
 
+
 def main():
     try:
         nbr = int(sys.argv[1])
@@ -13,6 +14,7 @@ def main():
 
     except ValueError:
         print("ERROR")
+
 
 if __name__ == "__main__":
     if len(sys.argv) == 2:
