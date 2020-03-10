@@ -14,4 +14,3 @@ if __name__ == "__main__":
             print(weird_list(str(sys.argv[1]), int(sys.argv[2])))
         except ValueError:
             print("ERROR")
-    pass

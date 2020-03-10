@@ -59,4 +59,3 @@ if __name__ == "__main__":
 
     # Documentation
     print(text_analyzer.__doc__)
-    pass

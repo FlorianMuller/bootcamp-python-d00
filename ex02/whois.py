@@ -21,4 +21,3 @@ if __name__ == "__main__":
         main()
     elif len(sys.argv) > 2:
         print("ERROR")
-    pass

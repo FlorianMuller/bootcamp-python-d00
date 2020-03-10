@@ -101,4 +101,3 @@ def mock_coockboob():
 if __name__ == "__main__":
     mock_coockboob()
     user_interface_cookbook()
-    pass
