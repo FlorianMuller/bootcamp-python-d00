@@ -5,8 +5,7 @@ def do_operation(nb1, nb2):
     try:
         return (nb1 + nb2, nb1 - nb2, nb1 * nb2, nb1 / nb2, nb1 % nb2)
     except ZeroDivisionError:
-        return (nb1 + nb2, nb1 - nb2, nb1 * nb2, "ERROR (div by zero)",
-                "ERROR (modulo by zero)")
+        return (nb1 + nb2, nb1 - nb2, nb1 * nb2, None, None)
 
 
 def print_operation(nb1, nb2):
@@ -16,8 +15,8 @@ def print_operation(nb1, nb2):
         f"Sum:          {res[0]}\n"
         f"Difference:   {res[1]}\n"
         f"Product:      {res[2]}\n"
-        f"Quotient:     {res[3]}\n"
-        f"Remainder:    {res[4]}"
+        f"Quotient:     {res[3] or 'ERROR (div by zero)'}\n"
+        f"Remainder:    {res[4] or 'ERROR (modulo by zero)'}"
     )
 
 
