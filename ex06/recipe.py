@@ -2,8 +2,6 @@ cookbook = {}
 
 
 def add_recipe(name, ingredients, meal, prep_time):
-    global cookbook
-
     cookbook[name] = {
         "ingredients": ingredients,
         "meal": meal,
@@ -12,7 +10,6 @@ def add_recipe(name, ingredients, meal, prep_time):
 
 
 def delete_recipe(name):
-    global cookbook
     try:
         del cookbook[name]
         print(f"\"{name}\" deleted")
