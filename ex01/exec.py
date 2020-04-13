@@ -1,11 +1,11 @@
 import sys
 
 
-def main():
-    string = " ".join(sys.argv[1:]).swapcase()[::-1]
+def reverse_strings(arg_lst):
+    string = " ".join(arg_lst).swapcase()[::-1]
     print(string)
 
 
 if __name__ == "__main__":
     if len(sys.argv) > 1:
-        main()
+        reverse_strings(sys.argv[1:])
